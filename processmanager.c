@@ -10,7 +10,7 @@ int main(){
 	}
 	else if (pid == 0){                                                                   //Child Process//
 		printf("Child process(PID:%d) is executing the command", getpid());
-		execlp("ls","ls","NULL");
+		execlp("ls","ls",(char*)NULL);
 	}
 	else{                                                                                 //Parent process// 
 		printf("Parent process is executing(PID:%d)", getpid());
